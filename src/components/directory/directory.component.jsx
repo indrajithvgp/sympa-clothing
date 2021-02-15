@@ -6,6 +6,7 @@ import {connect} from 'react-redux'
 import {createStructuredSelector} from 'reselect'
 
 const Directory = ({sections})=>{
+        console.log(sections)
         return(
             <div className="directory-menu">
             {

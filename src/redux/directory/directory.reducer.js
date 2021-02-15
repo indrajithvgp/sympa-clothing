@@ -4,30 +4,30 @@ const INITIAL_STATE = {
         title:'HATS',
         imageUrl:'https://i.ibb.co/cvpntL1/hats.png',
         id:1,
-        linkUrl:'hats'
+        linkUrl:'shop/hats'
     },{
-        title:'JACKETS',
+        title:'JACKETS', 
         imageUrl:'https://i.ibb.co/px2tCc3/jackets.png',
         id:2,
-        linkUrl:''
+        linkUrl:'shop/jackets'
     },{
         title:'SNEAKERS',
         imageUrl:'https://i.ibb.co/0jqHpnp/sneakers.png',
         id:3,
-        linkUrl:''
+        linkUrl:'shop/sneakers'
     },{
         title:'WOMENS',
         imageUrl:'https://i.ibb.co/GCCdy8t/womens.png',
         id:4,
         size:'large',
-        linkUrl:''
+        linkUrl:'shop/womens'
     },
     {
         title:'MENS',
         imageUrl:'https://i.ibb.co/R70vBrQ/mens.png',
         id:5,
         size:'large',
-        linkUrl:''
+        linkUrl:'shop/mens'
     }] 
 }
 
