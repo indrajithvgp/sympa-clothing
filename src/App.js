@@ -21,12 +21,12 @@ import Header from './components/header/header.component.jsx'
 
 
 
-const HatsPage = (props)=>{
-  console.log(props)
-  return(
-    <div><h1>Hola</h1></div>
-  )  
-}
+// const HatsPage = (props)=>{
+//   console.log(props)
+//   return(
+//     <div><h1>Hola</h1></div>
+//   )  
+// }
 
 class App extends Component{
 
