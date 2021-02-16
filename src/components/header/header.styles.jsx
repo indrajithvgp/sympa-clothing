@@ -21,6 +21,17 @@ width: 70px;
 padding: 25px;
 `
 
+export const TextContainer = styled(Link)`
+padding:25px 0;
+margin-top:10px;
+margin-right:270px;
+font-weight: bold;
+font-size:20px;
+color:black;
+font-family:'Julius Sans One';
+
+`
+
 export const OptionsContainer = styled.div`
 width: 50%;
 height: 100%;

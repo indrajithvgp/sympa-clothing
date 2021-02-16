@@ -8,7 +8,7 @@ import {createStructuredSelector} from 'reselect'
 import {selectCartHidden} from '../../redux/cart/cart.selectors'
 import {selectCurrentUser} from '../../redux/user/user.selectors'
 
-import {HeaderContainer, OptionsContainer, LogoContainer, OptionDiv, OptionLink} from './header.styles'
+import {HeaderContainer, OptionsContainer, TextContainer, LogoContainer, OptionDiv, OptionLink} from './header.styles'
 
 import CartIcon from '../cart-icon/cart-icon.component'
 
@@ -19,6 +19,7 @@ const Header=({currentUser, hidden})=> (
         <LogoContainer to="/">
             <Logo className='logo'></Logo>
         </LogoContainer>
+        <TextContainer to='/'>SYMPA CLOTHING</TextContainer>
         <OptionsContainer>
             <OptionLink to="/shop">
             SHOP
