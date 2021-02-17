@@ -13,11 +13,16 @@ function CollectionPage({collection}) {
                 {items.map(item=>(<CollectionItem key={item.id} item={item}/>))}
             </div>
         </div>
-    )
+    )   
 }
 
-const mapStateToProps = (state, ownProps)=>({
+const mapStateToProps = (state, ownProps)=>{
+    // console.log(ownProps)
+    // console.log(state.shop.collections)
+    // const found = state.shop.collections.find(collection => collection.routeName === ownProps.match.params.collectionId)
+    return{
     collection: selectCollection(ownProps.match.params.collectionId)(state)
-})
+    }
+}
 
 export default connect(mapStateToProps)(CollectionPage)

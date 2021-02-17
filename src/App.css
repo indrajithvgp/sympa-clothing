@@ -8,6 +8,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* .header{
+  background:white;
+  position: relative;
+} */
 
 body{
   font-family:'Open Sans Condensed';
