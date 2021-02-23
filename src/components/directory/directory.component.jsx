@@ -6,7 +6,6 @@ import {createStructuredSelector} from 'reselect'
 import {DirectoryContainer} from './directory.styles'
 
 const Directory = ({sections})=>{
-        console.log(sections)
         return(
             <DirectoryContainer>
             {
