@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Component} from 'react'
+import React, { useEffect} from 'react'
 import {Switch, Route, Redirect} from 'react-router-dom'
 
 import {auth, createUserProfileDocument}  from './firebase/firebase.utils'
@@ -17,35 +17,24 @@ import SignInAndSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.compone
 
 import Header from './components/header/header.component.jsx'
 
-class App extends Component{
+function App({checkUserSession, currentUser}) {
 
-  
-
-  unSubscribeFromAuth = null
-  componentDidMount() {
-    const {checkUserSession} = this.props
+  useEffect(()=>{
     checkUserSession()
-    
-  }
-  componentWillUnmount(){
-    this.unSubscribeFromAuth()
-  }
+  },[checkUserSession]);
 
-  render(){
     return (
       <div>
-        
         <Header />
-        
         <Switch>
           <Route exact path='/' component={HomePage}/>
           <Route path='/shop' component={ShopPage}/>
-          <Route path='/signin' render={()=>this.props.currentUser?(<Redirect to='/'/>):(<SignInAndSignUpPage/>)}/>
+          <Route path='/signin' render={()=>currentUser?(<Redirect to='/'/>):(<SignInAndSignUpPage/>)}/>
           <Route path='/checkout' component={CheckoutPage}/>
         </Switch>     
       </div>
     );
-  }
+  
   
 }
 const mapStateToProps = (state)=>createStructuredSelector({
